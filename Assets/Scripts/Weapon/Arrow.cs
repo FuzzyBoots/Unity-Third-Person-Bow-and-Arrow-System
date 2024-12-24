@@ -22,7 +22,7 @@ public class Arrow : MonoBehaviour
     void Update()
     {
         if(!disableRotation)
-            transform.rotation = Quaternion.LookRotation(rb.velocity);
+            transform.rotation = Quaternion.LookRotation(rb.linearVelocity);
     }
 
     private void OnCollisionEnter(Collision collision)
